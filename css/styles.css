@@ -6,9 +6,8 @@
   --whitecolor: white;
   --slate: #434455;
   --cloud: #f4f4fd;
+  --green: #31d0aa;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap");
 
 h1,
 h2,
@@ -388,11 +387,69 @@ body {
 }
 
 /*checked*/
-.footer-description {
+.footer-description-list {
   color: var(--cloud);
   font-size: 16px;
   font-weight: 400;
   margin-top: 17.5px;
+  display: flex;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-description-item {
+  margin-right: 16px;
+}
+
+.footer-container-1 {
+  margin-right: 120px;
+}
+
+.footer-container-1 .footer-description {
+  color: var(--cloud, #f4f4fd);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  margin-top: 18px;
+}
+
+.footer-container-2 .footer-description {
+  color: var(--white, #fff);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
+.footer-description-list .footer-description-item {
+  background-color: var(--iris);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icon {
+  fill: var(--cloud);
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-description-item:hover,
+.footer-description-item:focus {
+  background-color: var(--green);
 }
 
 /* benefits section */
