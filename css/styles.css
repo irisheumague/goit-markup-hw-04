@@ -7,6 +7,17 @@
   --slate: #434455;
   --cloud: #f4f4fd;
   --green: #31d0aa;
+  --cornflower: #e7e9fc;
+  --lightslate: #8e8f99;
+}
+
+/*checked*/
+body {
+  background-color: var(--whitecolor);
+  color: var(--slate);
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 16px;
 }
 
 h1,
@@ -45,16 +56,6 @@ img {
   color: inherit;
 }
 
-/*checked*/
-body {
-  background-color: var(--whitecolor);
-  color: var(--slate);
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.03em;
-  font-size: 16px;
-}
-
-/*HEADER CSS*/
 /* checked */
 .container {
   width: 1200px;
@@ -63,33 +64,26 @@ body {
 }
 
 /* checked */
+.button {
+  cursor: pointer;
+  border-color: transparent;
+  font-family: inherit;
+  font-size: 16px;
+  border-radius: 4px;
+  letter-spacing: 0.03em;
+}
+
+/* checked */
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/*HEADER CSS*/
+
+/* checked */
 .page-header {
-  border-bottom: 1px solid var(--cornflower, #e7e9fc);
-}
-
-/* checked */
-.menu,
-.navigation,
-.nav-menu,
-.contacts-menu {
-  display: flex;
-  align-items: center;
-}
-
-/* checked */
-.nav-menu {
-  margin-left: 93px;
-}
-
-/* checked */
-.contacts-menu {
-  margin-left: auto;
-}
-
-/* checked */
-.nav-menu,
-.contacts-menu {
-  gap: 40px;
+  border-bottom: 1px solid var(--cornflower);
 }
 
 /* checked */
@@ -113,21 +107,29 @@ body {
 }
 
 /* checked */
-.filters {
+.menu,
+.navigation,
+.nav-menu,
+.contacts-menu {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  align-items: center;
 }
 
 /* checked */
-.filters .space + .space {
-  margin-left: 8px;
+.nav-menu {
+  margin-left: 93px;
 }
 
-/*checked
+/* checked */
+.nav-menu,
+.contacts-menu {
+  gap: 40px;
+}
+
+/* checked */
 .nav-menu .item {
   font-size: 16px;
-}*/
+}
 
 /* checkedd */
 .nav-menu .page,
@@ -164,6 +166,13 @@ body {
 }
 
 /* checked */
+.contacts-menu {
+  margin-left: auto;
+}
+
+/* SECTION 1 HERO SECTION */
+
+/* checked */
 .bg-hero {
   background: var(--navyblue);
 }
@@ -182,39 +191,6 @@ body {
   line-height: 1.07;
   letter-spacing: 0.04em;
   margin-bottom: 30px;
-}
-
-/* checked */
-.button {
-  cursor: pointer;
-  border-color: transparent;
-  font-family: inherit;
-  font-size: 16px;
-  border-radius: 4px;
-  letter-spacing: 0.03em;
-}
-
-/* checked
-.project {
-  text-decoration: none;
-}
-
-.filters {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 72px;
-  padding-top: 96px;
-  gap: 24px;
-} */
-
-/* checked */
-.button.filter {
-  color: var(--iris);
-  background-color: var(--cloud);
-  font-weight: 500;
-  line-height: 1.62;
-  padding: 12px 24px;
 }
 
 /* checked */
@@ -237,22 +213,13 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* checked */
-.button.filter:hover,
-.button.filter:focus,
-.button.filter.current {
-  background-color: var(--oceancolor);
-  color: var(--cloud);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
------------------------------------------------ 
+/* SECTION 2 BENEFITS SECTION */
 
 /* checked */
 .benefits {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin-left: -30px;
   margin-top: -30px;
 }
@@ -262,6 +229,10 @@ body {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+}
+
+.benefits .benefits-item:not(:last-child) {
+  margin-right: 24px;
 }
 
 /* checked */
@@ -294,21 +265,11 @@ body {
   height: 64px;
 }
 
-.benefits-section {
-  padding-bottom: 0;
-}
-
---------------------------------- 
-
-/* checked */
-.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
+/* SECTION 3 WHAT ARE WE DOING */
 
 /* checked */
 .section.no-top-padding {
-  padding top: 0;
+  padding-top: 0;
 }
 
 /* checked */
@@ -325,7 +286,7 @@ body {
   margin-left: 30px;
   margin-top: 30px;
 }
--------------------------------------------
+
 /* checked */
 .section-title {
   text-align: center;
@@ -335,6 +296,8 @@ body {
   line-height: 1.17;
   margin-bottom: 50px;
 }
+
+/* SECTION 4 OUR TEAM SECTION */
 
 /* checked */
 .bg-team {
@@ -353,7 +316,7 @@ body {
   margin-left: 30px;
   margin-top: 30px;
 }
-------------------------------
+
 /* checked */
 .team {
   display: flex;
@@ -379,8 +342,6 @@ body {
   padding-bottom: 10px;
 }
 
---------------------------------------
-
 /* checked */
 .team .position {
   color: var(--slate);
@@ -397,11 +358,6 @@ body {
 }
 
 /* social links styling */
-.team-list {
-  display: flex;
-  justify-content: space-between;
-}
-
 .team-icon {
   height: 16px;
   width: 16px;
@@ -419,51 +375,56 @@ body {
 }
 
 .team-list-item {
-  margin-right: 12px;
+  margin-right: 0;
 }
---------------------------------
-/*checked*/
-/* .project .name {
-  color: var(--navyblue);
-  font-size: 20px;
-  margin-bottom: 4px;
-  font-weight: 500;
-  line-height: 2;
-  letter-spacing: 0.04em; */
 
-/* checked */
-.projects {
-  flex-wrap: wrap;
+.team-icon-container {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 8px;
+}
+
+.team-icon-container .team-list {
   display: flex;
-  margin-left: -30px;
-  margin-top: -30px;
+  justify-content: space-between;
+}
+/* CUSTOMERS SECTION */
+
+.customer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* checked */
-.project-card {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 3opx;
+.customer-item a {
+  border: 1px solid var(--lightslate);
+  color: var(--lightslate);
+  border-radius: 4px;
 }
 
-/* checked */
-.project .name {
-  margin-bottom: 4px;
-  color: var(--navyblue);
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 2;
-  letter-spacing: 0.06em;
+.customer-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
 }
-------------------------------
 
-/* checked */
-.project .type {
-  color: var(--slate);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
+.customer-item:not(:last-child) {
+  margin-right: 24px;
 }
+
+.customer-icon {
+  fill: currentColor;
+}
+
+.customer-item a:hover,
+.customer-item a:focus {
+  border: 1px solid var(--oceancolor);
+  color: var(--oceancolor);
+}
+
+/* CSS FOOTER SECTION */
 
 /* checked */
 .bg-footer {
@@ -479,8 +440,6 @@ body {
 .page-footer {
   padding: 60px 0;
 }
-
----------------------------------------
 
 .footer-container {
   display: flex;
@@ -511,7 +470,6 @@ body {
   line-height: 1.5;
   margin-top: 17.5px;
 }
-
 
 .footer-container-1 .footer-description {
   color: var(--cloud, #f4f4fd);
@@ -558,3 +516,82 @@ body {
   background-color: var(--green);
 }
 
+/* PORTFOLIO STYLING SHEET */
+/* PORTFOLIO SECTION 1 FILTERS */
+
+/* checked */
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.filters-section {
+  padding-top: 96px;
+}
+
+/* checked */
+.filters .space + .space {
+  margin-left: 24px;
+}
+
+/* checked */
+.button.filter {
+  color: var(--iris);
+  background-color: var(--cloud);
+  font-weight: 500;
+  line-height: 1.62;
+  padding: 12px 24px;
+}
+
+/* checked */
+.button.filter:hover,
+.button.filter:focus,
+.button.filter.current {
+  background-color: var(--oceancolor);
+  color: var(--cloud);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* PORTFOLIO SECTION 1 PROJECT */
+/* checked */
+.projects {
+  flex-wrap: wrap;
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+/* checked */
+.project-card {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 48px;
+}
+
+.project-card:hover,
+.project-card:focus {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+/* checked */
+.project .name {
+  margin-bottom: 4px;
+  color: var(--navyblue);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+/* checked */
+.project .type {
+  color: var(--slate);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+}
