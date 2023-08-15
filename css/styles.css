@@ -174,7 +174,15 @@ img {
 
 /* checked */
 .bg-hero {
-  background: var(--navyblue);
+  background-image: linear-gradient(
+      0deg,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/people-office-1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero {
@@ -220,8 +228,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: -30px;
-  margin-top: -30px;
 }
 
 /* checked */
@@ -232,7 +238,6 @@ img {
 }
 
 .benefits .benefits-item:not(:last-child) {
-  margin-right: 24px;
 }
 
 /* checked */
@@ -276,15 +281,12 @@ img {
 .what-we-do {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  justify-content: space-between;
 }
 
 /* checked */
 .what-we-do .item {
   flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
 }
 
 /* checked */
@@ -294,7 +296,7 @@ img {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
-  margin-bottom: 50px;
+  margin-bottom: 72px;
 }
 
 /* SECTION 4 OUR TEAM SECTION */
@@ -313,16 +315,13 @@ img {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   padding-bottom: 30px;
   flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
 }
 
 /* checked */
 .team {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+  justify-content: space-between;
 }
 
 /* checked */
